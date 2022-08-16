@@ -10,7 +10,7 @@ body {
 }
 
 .bg-image{
-  background-image: url('../public/image/snow.jpg');
+  background-image: url('../public/image/1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
