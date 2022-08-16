@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function SingUp() {
   return (
@@ -26,6 +27,7 @@ function SingUp() {
       >
         Submit
       </Button>
+      <p className="text-center mt-3">Already you have an account?</p>
     </Form>
   );
 }
