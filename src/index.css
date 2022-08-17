@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -9,8 +13,12 @@ body {
   overflow: hidden;
 }
 
-.bg-image{
-  background-image: url('../public/image/1.jpg');
+.bg-image {
+  background-image: url("../public/image/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.field{
+  border-radius: 0;
 }
