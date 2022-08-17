@@ -22,7 +22,7 @@ function SingUp() {
     try {
       setError("");
       await signup(data.email, data.password);
-      navigate("/");
+      navigate("/", { replace: true });
     } catch {
       setError("Failed to create an account");
     }

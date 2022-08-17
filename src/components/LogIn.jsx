@@ -18,7 +18,7 @@ function LogIn() {
     try {
       setError("");
       await logIn(data.email, data.password);
-      navigate("/");
+      navigate("/", { replace: true });
     } catch {
       setError("Failed to log in");
     }
