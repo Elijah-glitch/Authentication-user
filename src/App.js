@@ -6,6 +6,7 @@ import LogIn from './components/LogIn';
 import AuthProvider from './context/AuthContext';
 import Profile from './components/Profile';
 import PrivateRoute from './components/PrivateRoute';
+import ForgetPassword from './components/ForgetPassword';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path='/' element={<PrivateRoute><Profile /></PrivateRoute>} />
                 <Route path='/login' element={<LogIn />} />
                 <Route path='/signup' element={<SingUp />} />
+                <Route path='/forgetpassword' element={<ForgetPassword />} />
               </Routes>
             </AuthProvider>
           </div>

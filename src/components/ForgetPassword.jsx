@@ -5,26 +5,26 @@ import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-function LogIn() {
+function ForgetPassword() {
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
-  const { logIn } = useAuth();
-  const navigate = useNavigate();
+  const [message, setMessage] = useState("");
+  const { resetPassword } = useAuth();
 
   const onSubmit = async (data) => {
     try {
       setError("");
-      await logIn(data.email, data.password);
-      navigate("/");
+      await resetPassword(data.email);
+      setMessage("Check your inbox for further instructions");
     } catch {
-      setError("Failed to log in");
+      setError("Failed to reset password");
     }
   };
-
   return (
     <Form onSubmit={handleSubmit(onSubmit)} style={{ width: "100%" }}>
-      <h1 className="text-center mb-4">Log In</h1>
+      <h1 className="text-center mb-4">Reset Password</h1>
       {error && <Alert variant="danger">{error}</Alert>}
+      {message && <Alert variant="success">{message}</Alert>}
       <Form.Group className="mb-3">
         <Form.Label>Email address</Form.Label>
         <Form.Control
@@ -33,33 +33,19 @@ function LogIn() {
           placeholder="Enter email"
         />
       </Form.Group>
-
-      <Form.Group className="mb-3">
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          {...register("password")}
-          type="password"
-          placeholder="Password"
-        />
-      </Form.Group>
-      <div className="text-center my-2">
-        <Link  to="/forgetpassword">
-          Forget your password?
-        </Link>
-      </div>
       <Button
         className="mt-3"
         style={{ width: "100%" }}
         variant="primary"
         type="submit"
       >
-        Log In
+        Reset Password
       </Button>
-      <p className="text-center mt-3">
-        Do you have account? <Link to="/signup">Sign Up</Link>
-      </p>
+      <div className="text-center my-4">
+        <Link to="/login">Back to login</Link>
+      </div>
     </Form>
   );
 }
 
-export default LogIn;
+export default ForgetPassword;
