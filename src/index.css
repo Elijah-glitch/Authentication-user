@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -17,8 +16,4 @@ body {
   background-image: url("../public/image/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.field{
-  border-radius: 0;
 }

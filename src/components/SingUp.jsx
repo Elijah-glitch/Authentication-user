@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import Loading from "./Loading";
 
 function SingUp() {
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const { register, handleSubmit } = useForm();
   const { signup } = useAuth();
   const navigate = useNavigate();
@@ -16,6 +18,7 @@ function SingUp() {
       return setError("password not match");
     }
 
+    setLoading(true);
     try {
       setError("");
       await signup(data.email, data.password);
@@ -23,12 +26,15 @@ function SingUp() {
     } catch {
       setError("Failed to create an account");
     }
+
+    setLoading(false);
   };
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)} style={{ width: "100%" }}>
       <h1 className="text-center mb-4">Sign Up</h1>
       {error && <Alert variant="danger">{error}</Alert>}
+      {loading && <Loading />}
       <Form.Group className="mb-3">
         <Form.Label>Email address</Form.Label>
         <Form.Control
@@ -63,7 +69,10 @@ function SingUp() {
         Sing Up
       </Button>
       <p className="text-center mt-3">
-        Already you have an account? <Link to="/login">Log In</Link>
+        Already you have an account?{" "}
+        <Link className="text-decoration-none" to="/login">
+          Log In
+        </Link>
       </p>
     </Form>
   );
