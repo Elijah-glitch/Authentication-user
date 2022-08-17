@@ -12,9 +12,9 @@ function App() {
   return (
     <Stack>
       <Row>
-        <Col className='bg-image' style={{ minHeight: "100vh" }} xs={3} sm={6} lg={8}></Col>
-        <Col className='bg-white' style={{ minHeight: "100vh" }} xs={9} sm={6} lg={4}>
-          <div style={{ minHeight: "100vh" }} className='d-flex justify-content-center mx-xs-2  mx-sm-4 mt-5'>
+        <Col className='bg-image' style={{ minHeight: "100vh" }} xs={2} sm={6} lg={8}></Col>
+        <Col className='bg-white' style={{ minHeight: "100vh" }} xs={10} sm={6} lg={4}>
+          <div style={{ minHeight: "100vh" }} className='d-flex justify-content-center mx-xs-2  mx-sm-3 mt-5'>
             <AuthProvider>
               <Routes>
                 <Route path='/' element={<PrivateRoute><Profile /></PrivateRoute>} />

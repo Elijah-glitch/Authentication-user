@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Alert, Button, Stack } from "react-bootstrap";
+import { Alert, Button } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import "./publicStyle.css";
 
 function Profile() {
   const [error, setError] = useState("");

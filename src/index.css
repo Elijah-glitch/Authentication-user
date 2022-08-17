@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -16,4 +16,8 @@ body {
   background-image: url("../public/image/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.user-image {
+  width: 150px;
 }
