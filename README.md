@@ -35,7 +35,7 @@ In this project, Google's Firebase service is used to authenticate users, and yo
 - [x] Forget Password and Reset
 - [x] Profile and Log Out
 - [ ] Edit Profile
-- [ ] Login with Google and Github account
+- [x] Login with Google and Github account
 
 ## Run
 
