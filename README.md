@@ -6,7 +6,7 @@ In this project, Google's Firebase service is used to authenticate users, and yo
 
 ---
 ## Log In
-![log in](https://user-images.githubusercontent.com/91375726/185105086-c915e76b-87bf-46c5-bb99-8fc4502d9a21.png)
+![logIn](https://user-images.githubusercontent.com/91375726/185300394-a6ddc7d8-6a80-48d9-97e5-b0694e5e23c5.png)
 
 ## Sign Up
 ![sign in](https://user-images.githubusercontent.com/91375726/185105197-5a68e94e-e7e2-4692-a216-895240f7fa7f.png)
