@@ -39,6 +39,14 @@ function AuthProvider({ children }) {
     return auth.signInWithPopup(provider);
   };
 
+  const updateEmail = (email) => {
+    return currentUser.updateEmail(email);
+  };
+
+  const updatePassword = (password) => {
+    return currentUser.updatePassword(password);
+  };
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
@@ -56,6 +64,8 @@ function AuthProvider({ children }) {
     resetPassword,
     signInWithGoogle,
     signInWithGithub,
+    updateEmail,
+    updatePassword,
   };
 
   return (
