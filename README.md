@@ -15,7 +15,7 @@ In this project, Google's Firebase service is used to authenticate users, and yo
 ![forget](https://user-images.githubusercontent.com/91375726/185105205-21f80e9f-9ba1-4b7f-a193-d03f77c99518.png)
 
 ## Profile
-![profile](https://user-images.githubusercontent.com/91375726/185105210-fca04e09-8b5c-49d2-bc2b-fc721844d616.png)
+![profile](https://user-images.githubusercontent.com/91375726/185606775-a3fc1b73-0be3-47ef-b1d6-ea73b41446d7.png)
 
 ---
 
@@ -34,7 +34,7 @@ In this project, Google's Firebase service is used to authenticate users, and yo
 - [x] Sign Up
 - [x] Forget Password and Reset
 - [x] Profile and Log Out
-- [ ] Edit Profile
+- [x] Edit Profile
 - [x] Login with Google and Github account
 
 ## Run
