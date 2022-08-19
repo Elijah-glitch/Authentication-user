@@ -37,6 +37,8 @@ In this project, Google's Firebase service is used to authenticate users, and yo
 - [x] Edit Profile
 - [x] Login with Google and Github account
 
+
+
 ## Run
 
 Clone the project
